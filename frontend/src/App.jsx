@@ -15,10 +15,10 @@ function App() {
           path="/dashboard"
           element={token ? <Dashboard /> : <Navigate to="/login" replace />}
         />
-        <Route
+        {/* <Route
           path="*"
           element={<Navigate to={token ? "/dashboard" : "/login"} replace />}
-          />
+          /> */}
 
             
       </Routes>
