@@ -46,11 +46,11 @@ function App() {
         {/* ✅ Login page */}
         <Route path="/login" element={<Login />} />
 
-        {/* ✅ Default redirect */}
-        {/* <Route
+       {/* ✅ Default redirect */}
+         <Route
           path="/"
           element={<Navigate to={isAuthenticated ? "/admin/dashboard" : "/login"} />}
-        /> */}
+        /> 
 
         {/* ✅ Optional redirect to fix warning */}
         <Route path="/dashboard" element={<Navigate to="/admin/dashboard" />} />
